@@ -42,7 +42,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(4, 36, 52));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maleja.CLIENTE-PC\\Desktop\\logo1-removebg-preview.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo1-removebg-preview.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
         jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N

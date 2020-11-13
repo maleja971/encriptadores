@@ -149,74 +149,62 @@ public class EncryptorAndDecryptorProgress extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         heading = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         progressOfFilesTextField = new javax.swing.JTextArea();
         progressBar = new javax.swing.JProgressBar();
-        progressPercentLabel = new javax.swing.JLabel();
         oKButton = new javax.swing.JButton();
+        progressPercentLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(4, 36, 52));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         heading.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(heading, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 16, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(4, 36, 52));
+        jPanel1.setLayout(null);
 
         progressOfFilesTextField.setColumns(20);
         progressOfFilesTextField.setRows(5);
         progressOfFilesTextField.setToolTipText("OK");
         jScrollPane1.setViewportView(progressOfFilesTextField);
 
-        progressPercentLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        progressPercentLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        progressPercentLabel.setText("0%");
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(30, 140, 606, 223);
+        jPanel1.add(progressBar);
+        progressBar.setBounds(30, 370, 606, 26);
 
         oKButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        oKButton.setText("OK");
         oKButton.setToolTipText("OK");
         oKButton.setEnabled(false);
-        oKButton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        oKButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 oKButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(oKButton);
+        oKButton.setBounds(250, 420, 171, 31);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 693, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(heading)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(oKButton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(204, 204, 204)
-                        .addComponent(progressPercentLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(heading)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(progressPercentLabel)
-                    .addComponent(oKButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11))
-        );
+        progressPercentLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        progressPercentLabel.setForeground(new java.awt.Color(255, 255, 255));
+        progressPercentLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        progressPercentLabel.setText("0%");
+        jPanel1.add(progressPercentLabel);
+        progressPercentLabel.setBounds(540, 400, 96, 17);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/encriptadores/miniLogo.png"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(200, 0, 250, 120);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -232,6 +220,9 @@ public class EncryptorAndDecryptorProgress extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel heading;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton oKButton;
     private javax.swing.JProgressBar progressBar;

@@ -136,7 +136,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Maleja.CLIENTE-PC\Desktop\logo1-removebg-preview.png"/>
+              <Image iconType="3" name="/imagenes/logo1-removebg-preview.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
